@@ -1,0 +1,620 @@
+/* =========================================================
+   CS2 HUB
+   ASSIGNMENT #3
+   MEDIA QUERIES + BOOTSTRAP GRID
+   ========================================================= */
+
+
+/* =========================================================
+   GENERAL
+   ========================================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background-color: #ffffff;
+
+    color: #212529;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+
+.nav-link {
+    transition: 0.2s ease;
+}
+
+
+.nav-link:hover {
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero-section {
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.72),
+            rgba(0, 0, 0, 0.72)
+        ),
+        url("../images/trophy.jpg")
+        center / cover no-repeat;
+
+    color: white;
+
+    min-height: 420px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.hero-title {
+    font-size: 4rem;
+}
+
+
+.hero-text {
+
+    max-width: 800px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+/* =========================================================
+   PAGE HEADER
+   ========================================================= */
+
+.page-header {
+
+    background-color: #212529;
+
+    color: white;
+
+}
+
+
+/* =========================================================
+   SECTION TITLES
+   ========================================================= */
+
+.section-title {
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   RESPONSIVE TYPOGRAPHY
+   ========================================================= */
+
+.responsive-text {
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   INFO BOX
+   ========================================================= */
+
+.info-box {
+
+    background-color: #f8f9fa;
+
+    border-left:
+        5px solid
+        #0d6efd;
+
+    border-radius: 8px;
+
+}
+
+
+/* =========================================================
+   TASK 2
+   CUSTOM MEDIA QUERY CARDS
+   ========================================================= */
+
+.custom-card-container {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 24px;
+
+}
+
+
+.custom-card {
+
+    flex:
+        1 1
+        calc(33.333% - 16px);
+
+    min-width: 0;
+
+    background-color: white;
+
+    border:
+        1px solid
+        #dee2e6;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 12px
+        rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+.custom-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(0, 0, 0, 0.15);
+
+}
+
+
+.custom-card-image {
+
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+}
+
+
+.custom-card-content {
+
+    padding: 20px;
+
+}
+
+
+.custom-card-content h3 {
+
+    margin-top: 0;
+
+    margin-bottom: 10px;
+
+}
+
+
+.custom-card-content p {
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================================
+   BOOTSTRAP CARDS
+   ========================================================= */
+
+.card {
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+}
+
+
+.card-img-top {
+
+    height: 230px;
+
+    object-fit: cover;
+
+}
+
+
+/* =========================================================
+   CAROUSEL
+   ========================================================= */
+
+.carousel-image {
+
+    height: 500px;
+
+    object-fit: cover;
+
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.btn {
+
+    transition:
+        0.2s ease;
+
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.form-control,
+.form-select {
+
+    min-height: 45px;
+
+}
+
+
+textarea.form-control {
+
+    min-height: 130px;
+
+}
+
+
+/* =========================================================
+   GALLERY
+   ========================================================= */
+
+.gallery-card {
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
+}
+
+
+.gallery-card:hover {
+
+    transform:
+        translateY(-6px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.15) !important;
+
+}
+
+
+.gallery-image {
+
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+
+    margin-top: 0;
+
+}
+
+
+/* =========================================================
+   MOBILE
+   0 - 575px
+   ========================================================= */
+
+@media (max-width: 575.98px) {
+
+
+    /* HERO */
+
+    .hero-section {
+
+        min-height: 360px;
+
+    }
+
+
+    .hero-title {
+
+        font-size: 36px;
+
+    }
+
+
+    .hero-text {
+
+        font-size: 16px;
+
+    }
+
+
+    /* TYPOGRAPHY */
+
+    .responsive-text {
+
+        font-size: 14px;
+
+    }
+
+
+    .section-title {
+
+        font-size: 28px;
+
+    }
+
+
+    /* TASK 2 */
+
+    .custom-card {
+
+        flex:
+            1 1 100%;
+
+    }
+
+
+    .custom-card-image {
+
+        height: 220px;
+
+    }
+
+
+    /* CAROUSEL */
+
+    .carousel-image {
+
+        height: 280px;
+
+    }
+
+
+    /* BUTTON GROUP */
+
+    .btn-group {
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+
+    .btn-group .btn {
+
+        border-radius: 6px !important;
+
+        margin-bottom: 5px;
+
+    }
+
+
+    /* GALLERY */
+
+    .gallery-image {
+
+        height: 220px;
+
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   576 - 991px
+   ========================================================= */
+
+@media (
+    min-width: 576px
+) and (
+    max-width: 991.98px
+) {
+
+
+    /* HERO */
+
+    .hero-title {
+
+        font-size: 48px;
+
+    }
+
+
+    .hero-text {
+
+        font-size: 18px;
+
+    }
+
+
+    /* TYPOGRAPHY */
+
+    .responsive-text {
+
+        font-size: 17px;
+
+    }
+
+
+    /* TASK 2 */
+
+    .custom-card {
+
+        flex:
+            1 1
+            calc(50% - 12px);
+
+    }
+
+
+    /* CAROUSEL */
+
+    .carousel-image {
+
+        height: 400px;
+
+    }
+
+
+    /* GALLERY */
+
+    .gallery-image {
+
+        height: 240px;
+
+    }
+
+}
+
+
+/* =========================================================
+   DESKTOP
+   992px+
+   ========================================================= */
+
+@media (min-width: 992px) {
+
+
+    /* HERO */
+
+    .hero-title {
+
+        font-size: 64px;
+
+    }
+
+
+    /* TYPOGRAPHY */
+
+    .responsive-text {
+
+        font-size: 20px;
+
+    }
+
+
+    /* TASK 2 */
+
+    .custom-card {
+
+        flex:
+            1 1
+            calc(33.333% - 16px);
+
+    }
+
+
+    /* CAROUSEL */
+
+    .carousel-image {
+
+        height: 500px;
+
+    }
+
+
+    /* GALLERY */
+
+    .gallery-image {
+
+        height: 250px;
+
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+button:focus,
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+
+    outline:
+        3px solid
+        rgba(13, 110, 253, 0.4);
+
+    outline-offset: 2px;
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+
+        scroll-behavior: auto;
+
+    }
+
+
+    *,
+    *::before,
+    *::after {
+
+        transition:
+            none !important;
+
+    }
+
+}
